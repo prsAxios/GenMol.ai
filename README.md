@@ -33,7 +33,6 @@
 - 📬 Transactional emails powered by **Resend**
 - 💬 Group collaboration via **Ably channels**
 - 🌙 Light/Dark responsive UI (Tailwind CSS)
-- 📊 Analytical dashboard using **ApexCharts**
 - ⚙️ RESTful backend APIs using **MongoDB + Mongoose**
 
 ---
@@ -44,7 +43,7 @@
 |-----------------------|----------------------|----------------|------------------------|
 | React.js, Next.js     | Node.js, Express.js  | NextAuth       | Vercel (Suggested)     |
 | TypeScript, Tailwind  | MongoDB, Mongoose    | JWT            | Git, Webpack           |
-| RDKit, ApexCharts     | REST API             | Resend         | Postman, VS Code       |
+| RDKit                 | REST API             | Resend         | Postman, VS Code       |
 
 📌 Live Demo
 Coming soon... (Add Vercel/Netlify link here)
