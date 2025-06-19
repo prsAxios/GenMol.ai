@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-13.4.4-black?style=flat-square&logo=nextdotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-6.0-green?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NextAuth.js-secure-success?style=flat-square&logo=vercel&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-3.3.2-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/RDKit-Molecule_Engine-purple?style=flat-square"/>
+  <img src="https://img.shields.io/badge/NVIDIA%20AI-Integrated-yellowgreen?style=flat-square&logo=nvidia&logoColor=white"/>
+</p>
+
+
 ![image](https://github.com/user-attachments/assets/856e127c-b08f-4afc-9137-823a5728cc8e)
 ![image](https://github.com/user-attachments/assets/42c88d36-15e0-45db-8fb4-66f1f726506d)
 
