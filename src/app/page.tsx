@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   }
 };
 
+//Default layout for every page
 export default function Home() {
   return (
     <>
