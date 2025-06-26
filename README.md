@@ -29,8 +29,7 @@
 
 - 🔬 AI-powered molecule generation using **SMILES + NVIDIA AI**
 - 🧪 Molecule visualization via **RDKit.js**
-- 🔐 Secure auth with **NextAuth** (email verification, reset password)
-- 📬 Transactional emails powered by **Resend**
+- 🔐 Secure auth with **NextAuth**
 - 💬 Group collaboration via **Ably channels**
 - 🌙 Light/Dark responsive UI (Tailwind CSS)
 - ⚙️ RESTful backend APIs using **MongoDB + Mongoose**
@@ -43,7 +42,7 @@
 |-----------------------|----------------------|----------------|------------------------|
 | React.js, Next.js     | Node.js, Express.js  | NextAuth       | Vercel (Suggested)     |
 | TypeScript, Tailwind  | MongoDB, Mongoose    | JWT            | Git, Webpack           |
-| RDKit                 | REST API             | Resend         | Postman, VS Code       |
+| RDKit                 | REST API             |                | Postman, VS Code       |
 
 📌 Live Demo
 Coming soon... (Add Vercel/Netlify link here)
