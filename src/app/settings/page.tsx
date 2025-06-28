@@ -136,7 +136,7 @@ const Settings = () => {
         </div>
         <div className="grid grid-cols-5 gap-8">
           <div className="col-span-5 xl:col-span-3">
-            <div className="rounded-lg border border-black dark:border-white bg-white dark:bg-black">
+            <div className="rounded-lg border border-black dark:border-white bg-white dark:bg-black-2">
               <div className="border-b border-black dark:border-white px-7 py-4">
                 <h3 className="font-medium text-black dark:text-white">
                   Personal Information
@@ -154,7 +154,7 @@ const Settings = () => {
                           <User />
                         </span>
                         <input
-                          className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black py-3 pl-11.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
+                          className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 py-3 pl-11.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
                           type="text"
                           name="firstName"
                           value={userData.firstName}
@@ -172,7 +172,7 @@ const Settings = () => {
                           <User />
                         </span>
                         <input
-                          className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black py-3 pl-11.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
+                          className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 py-3 pl-11.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
                           type="text"
                           name="lastName"
                           value={userData.lastName}
@@ -191,7 +191,7 @@ const Settings = () => {
                         <MailIcon />
                       </span>
                       <input
-                        className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black py-3 pl-11.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
+                        className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 py-3 pl-11.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
                         type="email"
                         name="email"
                         value={userData.email}
@@ -205,7 +205,7 @@ const Settings = () => {
                       User Bio
                     </label>
                     <textarea
-                      className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black py-3 pl-4.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
+                      className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 py-3 pl-4.5 pr-4.5 text-black dark:text-white focus:border-primary focus-visible:outline-none"
                       name="userBio"
                       value={userData.userBio}
                       onChange={handleChange}
@@ -226,7 +226,7 @@ const Settings = () => {
           </div>
 
           <div className="col-span-5 xl:col-span-2">
-            <div className="rounded-lg border border-black dark:border-white bg-white dark:bg-black">
+            <div className="rounded-lg border border-black dark:border-white bg-white dark:bg-black-2">
               <div className="border-b border-black dark:border-white px-7 py-4">
                 <h3 className="font-medium text-black dark:text-white">
                   Profile Picture
@@ -261,7 +261,7 @@ const Settings = () => {
                     />
                     <label
                       htmlFor="profileImage"
-                      className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black py-3 text-center text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
+                      className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 py-3 text-center text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
                     >
                       Upload Profile Picture
                     </label>

@@ -13,8 +13,10 @@ import {
   UserIcon,
 } from "lucide-react";
 import gsap from "gsap";
-
+import { redirect, useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 const SignUp: React.FC = () => {
+  const router = useRouter();
   const [user, setUser] = useState({
     email: "",
     firstName: "",
@@ -111,6 +113,18 @@ const SignUp: React.FC = () => {
       const createdUser = await createUser(newUser);
       console.log(createdUser);
 
+      const result = await signIn("credentials", {
+        redirect: false,
+        email: user.email,
+        password: user.password,
+      });
+
+      if (result?.error) {
+        throw new Error("failed to signin after signup")
+      }
+      router.push('/')
+      router.refresh();
+
       setUser({
         email: "",
         firstName: "",
@@ -122,9 +136,11 @@ const SignUp: React.FC = () => {
       });
       setImageFile(null);
       setIsLoading(false);
-    } catch (error) {
+
+
+    } catch (error: any) {
       console.error("Error registering user:", error);
-      setErrors("Registration failed.");
+      setErrors(error.message);
     } finally {
       isSubmitting = false;
       setIsLoading(false);
@@ -162,7 +178,7 @@ const SignUp: React.FC = () => {
     <DefaultLayout>
       <ComponentHeader pageName="Sign Up" />
 
-      <div className="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-black">
+      <div className="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-black-2">
         <div className="flex flex-wrap items-center" onSubmit={handleSubmit}>
           <div className="hidden w-full xl:block xl:w-1/2">
             <div className="px-26 py-17.5 text-center">
@@ -205,7 +221,7 @@ const SignUp: React.FC = () => {
                       value={user.firstName}
                       onChange={handleInputChange}
                       placeholder="Enter your first name"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                     />
 
                     <span className="absolute right-4 top-4">
@@ -225,7 +241,7 @@ const SignUp: React.FC = () => {
                       value={user.lastName}
                       onChange={handleInputChange}
                       placeholder="Enter your last name"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                     />
 
                     <span className="absolute right-4 top-4">
@@ -244,7 +260,7 @@ const SignUp: React.FC = () => {
                       value={user.email}
                       onChange={handleInputChange}
                       placeholder="Enter your email"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                     />
 
                     <span className="absolute right-4 top-4">
@@ -264,7 +280,7 @@ const SignUp: React.FC = () => {
                       value={user.password}
                       onChange={handleInputChange}
                       placeholder="Enter your password"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                     />
 
                     <span className="absolute right-4 top-4">
@@ -284,7 +300,7 @@ const SignUp: React.FC = () => {
                       value={user.confirmPassword}
                       onChange={handleInputChange}
                       placeholder="Re-enter your password"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                     />
                     <span className="absolute right-4 top-4">
                       <LockIcon />
@@ -302,7 +318,7 @@ const SignUp: React.FC = () => {
                       value={user.userBio}
                       onChange={handleInputChange}
                       placeholder="Enter your bio"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                     />
                   </div>
                 </div>

@@ -113,7 +113,7 @@ function ChatBox() {
         <div
           className={`max-w-xs rounded-lg border border-black dark:border-white p-4 ${isMe
             ? "bg-primary text-white shadow-md"
-            : "bg-gray-200 dark:bg-black shadow-sm text-black dark:text-white"
+            : "bg-gray-200 dark:bg-black-2 shadow-sm text-black dark:text-white"
             }`}
         >
           <div className="mb-2 flex items-center">
@@ -137,7 +137,7 @@ function ChatBox() {
 
   return (
     <DefaultLayout>
-      <div className="container mx-auto h-screen p-4 bg-white dark:bg-black text-black dark:text-white">
+      <div className="container mx-auto h-screen p-4 bg-white dark:bg-black-2 text-black dark:text-white">
         <h1 className="mb-6 text-3xl text-black dark:text-white">
           Drug Research chat
         </h1>
@@ -146,7 +146,7 @@ function ChatBox() {
           <input
             type="text"
             placeholder="Create new group"
-            className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black p-4 outline-none focus:border-primary dark:focus:border-primary text-black dark:text-white"
+            className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 p-4 outline-none focus:border-primary dark:focus:border-primary text-black dark:text-white"
             onKeyPress={(e) => {
               if (e.key === "Enter") handleCreateGroup(e.target.value);
             }}
@@ -154,7 +154,7 @@ function ChatBox() {
           <div className="relative w-full">
             <select
               onChange={(e) => handleJoinGroup(e.target.value)}
-              className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black p-4 outline-none focus:border-primary dark:focus:border-primary text-black dark:text-white"
+              className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 p-4 outline-none focus:border-primary dark:focus:border-primary text-black dark:text-white"
             >
               <option value="">Join a group</option>
               {groups.map((group) => (
@@ -167,11 +167,11 @@ function ChatBox() {
         </div>
 
         {currentGroup && (
-          <div className="rounded-lg border border-black dark:border-white p-6 bg-white dark:bg-black">
+          <div className="rounded-lg border border-black dark:border-white p-6 bg-white dark:bg-black-2">
             <h2 className="mb-4 text-xl text-black dark:text-white">
               Current Group: {currentGroup.name}
             </h2>
-            <div className="flex-1 overflow-y-auto p-4 bg-white dark:bg-black">
+            <div className="flex-1 overflow-y-auto p-4 bg-white dark:bg-black-2">
               {renderedMessages.length > 0 ? (
                 <>
                   {renderedMessages}
@@ -189,7 +189,7 @@ function ChatBox() {
                 value={messageText}
                 onChange={(e) => setMessageText(e.target.value)}
                 placeholder="Type a message..."
-                className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black p-4 outline-none focus:border-primary dark:focus:border-primary text-black dark:text-white"
+                className="w-full rounded-lg border border-black dark:border-white bg-white dark:bg-black-2 p-4 outline-none focus:border-primary dark:focus:border-primary text-black dark:text-white"
               />
               <button
                 type="submit"

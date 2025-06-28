@@ -77,7 +77,7 @@ const TableOne = () => {
   }, [searchQuery]);
 
   return (
-    <div className="rounded-lg border-[2px] border-black dark:border-white bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-[#181818] dark:bg-black sm:px-7.5 xl:pb-1">
+    <div className="rounded-lg border-[2px] border-black dark:border-white bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-[#181818] dark:bg-black-2 sm:px-7.5 xl:pb-1">
       <h4 className="mb-6 text-xl font-semibold text-black dark:text-white">
         Molecules
       </h4>

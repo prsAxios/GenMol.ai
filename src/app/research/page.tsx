@@ -95,7 +95,7 @@ export default function PubChem() {
 
         {compoundData && (
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 text-black dark:text-white">
-            <div className="dark:bg-black space-y-3 rounded-lg bg-white p-6  shadow-md border-[2px] border-black dark:border-white">
+            <div className="dark:bg-black-2 space-y-3 rounded-lg bg-white p-6  shadow-md border-[2px] border-black dark:border-white">
               <h2 className="text-gray-700 mb-4 text-xl text-black  dark:text-white">
                 Basic Information
               </h2>
@@ -140,7 +140,7 @@ export default function PubChem() {
               </p>
             </div>
 
-            <div className="dark:bg-black space-y-3 rounded-lg bg-white p-6 shadow-md border-[2px] border-black dark:border-white">
+            <div className="dark:bg-black-2 space-y-3 rounded-lg bg-white p-6 shadow-md border-[2px] border-black dark:border-white">
               <h2 className="text-gray-700 mb-4 text-xl text-black  dark:text-white">
                 Physical Properties
               </h2>
@@ -182,7 +182,7 @@ export default function PubChem() {
               </p>
             </div>
 
-            <div className="dark:bg-black space-y-3 rounded-lg bg-white p-6 shadow-md md:col-span-2 border-[2px] border-black dark:border-white">
+            <div className="dark:bg-black-2 space-y-3 rounded-lg bg-white p-6 shadow-md md:col-span-2 border-[2px] border-black dark:border-white">
               <h2 className="text-gray-700 mb-4 text-xl text-black  dark:text-white">
                 Additional Information
               </h2>

@@ -116,7 +116,7 @@ const ModalLayout = () => {
 
       <div className="grid grid-cols-1 gap-9 sm:grid-cols-3">
         <div className="flex flex-col gap-9 sm:col-span-2">
-          <div className="rounded-lg border-[2px] border-black dark:border-white bg-white shadow-default dark:border-[#121212] dark:bg-black">
+          <div className="rounded-lg border-[2px] border-black dark:border-white bg-white shadow-default dark:border-[#121212] dark:bg-black-2">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
                 SMILES to Molecule Generator

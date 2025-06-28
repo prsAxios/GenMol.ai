@@ -34,7 +34,7 @@ export default function RootLayout({
           <UserProvider>
             <AblyProvider client={client}>
               <ChannelProvider channelName="chat-demo1">
-                <div className="font-poppins dark:bg-boxdark-2 dark:text-bodydark ">
+                <div className="font-poppins dark:bg-black-2-2 dark:text-bodydark ">
                   {loading ? <Loader /> : children}
                 </div>
               </ChannelProvider>

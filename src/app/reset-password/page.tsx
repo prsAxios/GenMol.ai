@@ -53,7 +53,7 @@ const ResetPasswordPage: React.FC = () => {
     <DefaultLayout>
       <Breadcrumb pageName="Reset Password" />
 
-      <div className="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div className="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-black-2">
         <div className="flex flex-wrap items-center">
           <div className="mx-auto w-full xl:w-4/6">
             <div className="w-full p-4 sm:p-12.5 xl:p-17.5">
@@ -79,7 +79,7 @@ const ResetPasswordPage: React.FC = () => {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="Enter your new password"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                       required
                     />
                     <span className="absolute right-4 top-4">
@@ -98,7 +98,7 @@ const ResetPasswordPage: React.FC = () => {
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
                       placeholder="Confirm your new password"
-                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                      className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-black-2 dark:text-white dark:focus:border-primary"
                       required
                     />
                     <span className="absolute right-4 top-4">

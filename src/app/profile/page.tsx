@@ -16,7 +16,7 @@ const Profile = () => {
       <div className="mx-auto max-w-242.5">
         <Breadcrumb pageName="Profile" containActionButton={false} />
 
-        <div className="overflow-hidden rounded-lg border-[2px] border-black dark:border-white bg-white shadow-default dark:border-strokedark dark:bg-black">
+        <div className="overflow-hidden rounded-lg border-[2px] border-black dark:border-white bg-white shadow-default dark:border-strokedark dark:bg-black-2">
           <div className="relative z-20 h-35 md:h-65 overflow-hidden">
             <Image
               src={"/images/cover/cover-01.png"}
@@ -31,7 +31,7 @@ const Profile = () => {
             />
           </div>
           <div className="px-4 pb-6 text-center lg:pb-8 xl:pb-11.5">
-            <div className="relative z-30 mx-auto -mt-[88px] w-[120px] h-[120px] sm:w-[176px] sm:h-[176px] rounded-full dark:bg-white bg-black p-1 backdrop-blur sm:h-44 sm:max-w-44 sm:p-1 overflow-hidden">
+            <div className="relative z-30 mx-auto -mt-[88px] w-[120px] h-[120px] sm:w-[176px] sm:h-[176px] rounded-full dark:bg-white bg-black-2 p-1 backdrop-blur sm:h-44 sm:max-w-44 sm:p-1 overflow-hidden">
               <div className="relative drop-shadow-2 w-full h-full">
                 <Image
                   src={user.photo}

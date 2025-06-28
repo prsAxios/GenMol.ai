@@ -51,7 +51,7 @@ const MapOne: React.FC = () => {
   }, []);
 
   return (
-    <div className="col-span-12 rounded-lg border-2 dark:border-white bg-white px-7.5 py-6 shadow-default dark:border-[#181818] dark:bg-black">
+    <div className="col-span-12 rounded-lg border-2 dark:border-white bg-white px-7.5 py-6 shadow-default dark:border-[#181818] dark:bg-black-2">
       <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
         All over the world
       </h4>
