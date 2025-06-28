@@ -108,7 +108,7 @@ const SignIn: React.FC = () => {
                 <div className="mb-5">
                   <button
                     type="submit"
-                    className="w-full cursor-pointer rounded-lg border border-primary bg- p-4 text-white transition hover:bg-opacity-90"
+                    // className="w-full cursor-pointer rounded-lg border border-primary bg- p-4 text-white transition hover:bg-opacity-90"
                     disabled={isLoading}
                   >
                     {isLoading ? (
@@ -129,7 +129,9 @@ const SignIn: React.FC = () => {
                       Sign Up
                     </Link>
                   </p>
+                  {/*demo test*/}
                   <p>
+
                     Forgot Password?{" "}
                     <Link href="/forget-password" className="text-primary">
                       Reset
